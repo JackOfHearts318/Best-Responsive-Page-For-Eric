@@ -1,0 +1,126 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+}
+
+p {
+	display: none;
+}
+
+.wide-col {
+	width: 65%;
+	height: 100%;
+	display: flex;
+}
+
+.narrow-col {
+	width: 35%;
+	height: 100%;
+}
+
+.box {
+	height: 50%;
+	width: 100%;
+}
+
+.blue {background-color: #0D11A8;}
+.red {background-color: #F50F0F;}
+.yellow {background-color: #FAE317;}
+
+.center-horizontal {
+	align-items: center;
+}
+
+.center-vertical {
+	justify-content: center;
+}
+
+.contain-image {
+	max-height: 75%;
+	max-width: 75%;
+}
+
+@media only screen and (max-width: 1000px) {
+	body {
+		display: block;
+	}
+	.wide-col {
+		display: flex;
+		width: 100%;
+		height: 65%;
+	}
+	.narrow-col {
+		display: flex;
+		width: 100%;
+		height: 35%;
+	}
+	.box {
+		height: 100%;
+		width: 50%;
+	}
+	.blue {
+		background-color: #ffa500;
+	}
+	.red {
+		background-color: #008000;
+	}
+	.yellow {
+		background-color: #800080;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.contain-image {
+		display: none;
+	}
+	.blue {
+		background-image: url(spongebob.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	.red {
+		background-image: url(kitten-medium.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	.yellow {
+		background-image: url(kitten-small.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+}
+
+/* All the things below will become very important, such as changing an image to a gif and the background changing to a solid color */
+
+@media only screen and (max-width: 500px) {
+	p {
+		display: contents;
+	}
+	
+	.blue {
+		background-image: url(ohgod.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		background-color: rgb(246, 246, 246);
+	}
+	.red {
+		background-image: url(kittyloaf.gif);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		background-color: rgb(246, 246, 246);
+	}
+	.yellow {
+		background-image: url(kittyloaf.gif);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		background-color: rgb(246, 246, 246);
+	}
+}
